@@ -18,6 +18,9 @@
 		BB9322C3251754BF00064668 /* RepositoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9322C2251754BF00064668 /* RepositoryListCell.swift */; };
 		BB9322C8251758B900064668 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9322C7251758B900064668 /* MockData.swift */; };
 		BB9322D025175A5A00064668 /* RepositoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9322CF25175A5A00064668 /* RepositoryDetailsView.swift */; };
+		BBFD71EE2517C2A000F262B4 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD71ED2517C2A000F262B4 /* Webservice.swift */; };
+		BBFD71F72517DD6300F262B4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD71F62517DD6300F262B4 /* SearchBar.swift */; };
+		BBFD71FF2517DDB000F262B4 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD71FE2517DDB000F262B4 /* RepositoryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		BB9322C2251754BF00064668 /* RepositoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListCell.swift; sourceTree = "<group>"; };
 		BB9322C7251758B900064668 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		BB9322CF25175A5A00064668 /* RepositoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsView.swift; sourceTree = "<group>"; };
+		BBFD71ED2517C2A000F262B4 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		BBFD71F62517DD6300F262B4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		BBFD71FE2517DDB000F262B4 /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,9 @@
 		BB93226E2517424900064668 /* Github_Trending */ = {
 			isa = PBXGroup;
 			children = (
+				BBFD71E92517C28E00F262B4 /* Services */,
 				BB9322B125174C6100064668 /* Models */,
-				BB93229D2517430F00064668 /* View */,
+				BB93229D2517430F00064668 /* Views */,
 				BB93226F2517424900064668 /* Github_TrendingApp.swift */,
 				BB9322732517424A00064668 /* Assets.xcassets */,
 				BB9322782517424A00064668 /* Info.plist */,
@@ -141,20 +148,22 @@
 			path = Github_TrendingUITests;
 			sourceTree = "<group>";
 		};
-		BB93229D2517430F00064668 /* View */ = {
+		BB93229D2517430F00064668 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				BB93229F2517432300064668 /* RepositoryDetails */,
 				BB93229E2517431800064668 /* RepositoryListView */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BB93229E2517431800064668 /* RepositoryListView */ = {
 			isa = PBXGroup;
 			children = (
-				BB9322A32517444E00064668 /* RepositoryListView.swift */,
 				BB9322C2251754BF00064668 /* RepositoryListCell.swift */,
+				BB9322A32517444E00064668 /* RepositoryListView.swift */,
+				BBFD71FE2517DDB000F262B4 /* RepositoryListViewModel.swift */,
+				BBFD71F62517DD6300F262B4 /* SearchBar.swift */,
 			);
 			path = RepositoryListView;
 			sourceTree = "<group>";
@@ -175,6 +184,14 @@
 				BB9322C7251758B900064668 /* MockData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BBFD71E92517C28E00F262B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BBFD71ED2517C2A000F262B4 /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +327,12 @@
 				BB9322702517424900064668 /* Github_TrendingApp.swift in Sources */,
 				BB9322BB25174C8300064668 /* User.swift in Sources */,
 				BB9322C8251758B900064668 /* MockData.swift in Sources */,
+				BBFD71FF2517DDB000F262B4 /* RepositoryListViewModel.swift in Sources */,
 				BB9322D025175A5A00064668 /* RepositoryDetailsView.swift in Sources */,
+				BBFD71F72517DD6300F262B4 /* SearchBar.swift in Sources */,
 				BB9322B325174C7000064668 /* Repository.swift in Sources */,
 				BB9322C3251754BF00064668 /* RepositoryListCell.swift in Sources */,
+				BBFD71EE2517C2A000F262B4 /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

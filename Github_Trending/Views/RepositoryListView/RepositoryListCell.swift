@@ -20,9 +20,3 @@ struct RepositoryListCell: View {
         }
     }
 }
-
-struct RepositoryListCell_Previews: PreviewProvider {
-    static var previews: some View {
-        RepositoryListCell(repository: mockRepository)
-    }
-}

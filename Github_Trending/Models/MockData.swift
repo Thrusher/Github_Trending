@@ -17,15 +17,15 @@ let mockRepository = Repository(author: "cli",
                                 languageColor: "#00ADD8",
                                 stars: 14746,
                                 forks: 981,
-                                currentPeriodStart: 778,
-                                buildBy: [
-                                 User(userName: "mislav",
+                                currentPeriodStars: 778,
+                                builtBy: [
+                                 User(username: "mislav",
                                       href: URL(string: "https://github.com/mislav")!,
                                       avatar: URL(string: "https://avatars2.githubusercontent.com/u/887")!),
-                                 User(userName: "vilmibm",
+                                 User(username: "vilmibm",
                                       href: URL(string: "https://github.com/vilmibm")!,
                                       avatar: URL(string: "https://avatars3.githubusercontent.com/u/98482")!),
-                                 User(userName: "probablycorey",
+                                 User(username: "probablycorey",
                                       href: URL(string: "https://github.com/probablycorey")!,
                                       avatar: URL(string: "https://avatars2.githubusercontent.com/u/596")!)
                                 ]
@@ -41,15 +41,15 @@ let mockRepositories: [Repository] = [
                languageColor: "#00ADD8",
                stars: 14746,
                forks: 981,
-               currentPeriodStart: 778,
-               buildBy: [
-                User(userName: "mislav",
+               currentPeriodStars: 778,
+               builtBy: [
+                User(username: "mislav",
                      href: URL(string: "https://github.com/mislav")!,
                      avatar: URL(string: "https://avatars2.githubusercontent.com/u/887")!),
-                User(userName: "vilmibm",
+                User(username: "vilmibm",
                      href: URL(string: "https://github.com/vilmibm")!,
                      avatar: URL(string: "https://avatars3.githubusercontent.com/u/98482")!),
-                User(userName: "probablycorey",
+                User(username: "probablycorey",
                      href: URL(string: "https://github.com/probablycorey")!,
                      avatar: URL(string: "https://avatars2.githubusercontent.com/u/596")!)
                ]
@@ -63,21 +63,21 @@ let mockRepositories: [Repository] = [
                languageColor: "#00ADD8",
                stars: 7336,
                forks: 274,
-               currentPeriodStart: 298,
-               buildBy: [
-                User(userName: "schollz",
+               currentPeriodStars: 298,
+               builtBy: [
+                User(username: "schollz",
                      href: URL(string: "https://github.com/schollz")!,
                      avatar: URL(string: "https://avatars3.githubusercontent.com/u/6550035")!),
-                User(userName: "TheQueasle",
+                User(username: "TheQueasle",
                      href: URL(string: "https://github.com/TheQueasle")!,
                      avatar: URL(string: "https://avatars1.githubusercontent.com/u/13701545")!),
-                User(userName: "afotescu",
+                User(username: "afotescu",
                      href: URL(string: "https://github.com/afotescu")!,
                      avatar: URL(string: "https://avatars1.githubusercontent.com/u/16053082")!),
-                User(userName: "maximbaz",
+                User(username: "maximbaz",
                      href: URL(string: "https://github.com/maximbaz")!,
                      avatar: URL(string: "https://avatars0.githubusercontent.com/u/1177900")!),
-                User(userName: "smileboywtu",
+                User(username: "smileboywtu",
                      href: URL(string: "https://github.com/smileboywtu")!,
                      avatar: URL(string: "https://avatars0.githubusercontent.com/u/12299551")!)
                ]

@@ -7,8 +7,3 @@
 
 import Foundation
 
-struct User {
-    let userName: String
-    let href: URL
-    let avatar: URL
-}

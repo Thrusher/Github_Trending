@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Repository: Identifiable {
-    var id = UUID()
+struct Repository: Codable {
     let author: String
     let name: String
     let avatar: URL
@@ -18,6 +17,12 @@ struct Repository: Identifiable {
     let languageColor: String
     let stars: Int
     let forks: Int
-    let currentPeriodStart: Int
-    let buildBy: [User]
+    let currentPeriodStars: Int
+    let builtBy: [User]
+}
+
+struct User: Codable {
+    let username: String
+    let href: URL
+    let avatar: URL
 }
