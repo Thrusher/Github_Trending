@@ -20,9 +20,3 @@ struct Repository: Codable {
     let currentPeriodStars: Int
     let builtBy: [User]
 }
-
-struct User: Codable {
-    let username: String
-    let href: URL
-    let avatar: URL
-}

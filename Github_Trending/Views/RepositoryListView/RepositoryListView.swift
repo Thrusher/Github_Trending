@@ -8,28 +8,6 @@
 import SwiftUI
 import Combine
 
-class RepositoryViewModel: Identifiable {
-    let id = UUID()
-    
-    var repository: Repository
-    
-    init(repository: Repository) {
-        self.repository = repository
-    }
-    
-    var name: String {
-        return self.repository.name
-    }
-    
-    var starsCount: String {
-        return String("\(self.repository.stars)")
-    }
-    
-    var description: String {
-        return self.repository.description
-    }
-}
-
 struct RepositoryListView: View {
     
     @State
@@ -50,7 +28,7 @@ struct RepositoryListView: View {
                         }
                 ) { repo in
                     NavigationLink(
-                        destination: RepositoryDetailsView(repository: repo.repository)) {
+                        destination: RepositoryDetailsView(model: RepositoryDetailsViewModel(repository: repo.repository))) {
                         RepositoryListCell(repository: repo.repository)
                     }
                 }

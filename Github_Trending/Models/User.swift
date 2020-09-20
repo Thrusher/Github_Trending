@@ -7,3 +7,8 @@
 
 import Foundation
 
+struct User: Codable {
+    let username: String
+    let href: URL
+    let avatar: URL
+}

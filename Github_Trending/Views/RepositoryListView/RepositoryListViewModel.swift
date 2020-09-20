@@ -8,6 +8,28 @@
 import Foundation
 import Combine
 
+class RepositoryViewModel: Identifiable {
+    let id = UUID()
+    
+    var repository: Repository
+    
+    init(repository: Repository) {
+        self.repository = repository
+    }
+    
+    var name: String {
+        return self.repository.name
+    }
+    
+    var starsCount: String {
+        return String("\(self.repository.stars)")
+    }
+    
+    var description: String {
+        return self.repository.description
+    }
+}
+
 class RepositoryListViewModel: ObservableObject {
     
     let didChange = PassthroughSubject<RepositoryListViewModel, Never>()

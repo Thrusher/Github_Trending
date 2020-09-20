@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class Webservice {
     func fetchTrendingRepositories(url: URL, completion: @escaping ([Repository]?) -> ()) {
@@ -28,5 +29,3 @@ class Webservice {
         }.resume()
     }
 }
-
-
