@@ -11,7 +11,7 @@ import SwiftUI
 struct Github_TrendingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RepositoryListView(repositories: mockRepositories)
         }
     }
 }
